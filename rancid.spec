@@ -20,6 +20,7 @@ Requires:	cvs expect >= 5.40
 BuildRequires:	expect >= 5.40
 Requires(pre):	%{?!notmdk:rpm-helper}%{?notmdk:/usr/sbin/useradd}
 Requires(postun):	%{?!notmdk:rpm-helper}%{?notmdk:/usr/sbin/userdel}
+BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 
 %description
 RANCID monitors a router's (or more generally a device's) configuration,
