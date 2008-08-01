@@ -8,7 +8,7 @@
 
 Name:		rancid
 Version:	2.3.1
-Release:	%mkrel 3
+Release:	%mkrel 4
 URL:		http://www.shrubbery.net/rancid/
 Summary:	Really Awesome New Cisco confIg Differ
 Group:		Monitoring
