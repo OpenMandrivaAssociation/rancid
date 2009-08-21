@@ -7,15 +7,14 @@
 %endif
 
 Name:		rancid
-Version:	2.3.1
-Release:	%mkrel 4
-URL:		http://www.shrubbery.net/rancid/
+Version:	2.3.2
+Release:	%mkrel 1
 Summary:	Really Awesome New Cisco confIg Differ
 Group:		Monitoring
 License:	GPL
-Source:		ftp://ftp.shrubbery.net/pub/rancid/rancid-2.3.1.tar.gz
+URL:		http://www.shrubbery.net/rancid/
+Source:		ftp://ftp.shrubbery.net/pub/rancid/rancid-%{version}.tar.gz
 Source1:	README.rancid.urpmi
-Patch:		rancid-2.3.1-makefile-destdir.patch
 Requires:	cvs expect >= 5.40
 BuildRequires:	expect >= 5.40
 Requires(pre):	%{?!notmdk:rpm-helper}%{?notmdk:/usr/sbin/useradd}
@@ -51,7 +50,6 @@ Certainty Solutions Inc.
 
 %prep
 %setup -q
-%patch -p1 -b .orig
 cp %{SOURCE1} README.urpmi
 
 %build
