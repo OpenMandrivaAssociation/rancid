@@ -7,7 +7,7 @@
 %endif
 
 Name:		rancid
-Version:	2.3.2
+Version:	2.3.3
 Release:	%mkrel 1
 Summary:	Really Awesome New Cisco confIg Differ
 Group:		Monitoring
