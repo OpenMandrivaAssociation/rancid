@@ -1,0 +1,27 @@
+To get rancid running after installation:
+1) Edit /etc/rancid/rancid.conf, you must set LIST_OF_GROUPS
+2) Add rancid-<group> and rancid-admin-<group> aliases for your MTA for
+    each group you set in LIST_OF_GROUPS
+3) Start a shell as rancid (e.g. su - rancid -s /bin/bash) and 
+  3.1)	run rancid-cvs (maybe create .bash_profile with 
+	PATH="$PATH:/usr/lib/rancid/bin"
+	or similar first to make this easier)
+  3.2)	Create the .cloginrc file (e.g. from the sample in 
+	/usr/share/rancid/cloginrc.sample) in the rancid user's home directory.
+	Ensure secure permissions (chmod 600 .cloginrc)
+  3.3)	For eatch group, edit <group>/routers.db, adding routers as:
+	<ip address|hostname>:<type>:[up|down], eg:
+	192.168.0.1:cisco:up
+  3.4)	Test rancid, by running 'rancid-run', or 'rancid-run <group>'
+	Check the logs in logs/ to see if it succeeded. If not, test
+	that the .cloginrc is ok, eg:
+	clogin -f .cloginrc <ip address|hostname>
+
+	If it succeeds, you are done, rancid run will be run as rancid every
+	hour (from /etc/cron.d/rancid)
+
+	Note that rancid needs to be able to run most 'show' commands, and 
+	'write term'. TACACS+ (eg tac_plus) or similar is suggested to allow
+	this.
+
+4) Add cvsweb/viewvs or similar

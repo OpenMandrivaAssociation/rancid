@@ -96,3 +96,40 @@ rm -Rf %{buildroot}
 %doc README README.lg share/README.misc README.urpmi
 
 
+
+
+%changelog
+* Wed Jul 28 2010 Guillaume Rousse <guillomovitch@mandriva.org> 2.3.3-1mdv2011.0
++ Revision: 562773
+- update to new version 2.3.3
+
+* Fri Aug 21 2009 Guillaume Rousse <guillomovitch@mandriva.org> 2.3.2-1mdv2010.0
++ Revision: 419018
+- new version
+
+* Fri Aug 01 2008 Thierry Vignaud <tv@mandriva.org> 2.3.1-4mdv2009.0
++ Revision: 260042
+- rebuild
+
+* Fri Jul 25 2008 Thierry Vignaud <tv@mandriva.org> 2.3.1-3mdv2009.0
++ Revision: 247820
+- rebuild
+
+* Wed Jan 02 2008 Olivier Blin <oblin@mandriva.com> 2.3.1-1mdv2008.1
++ Revision: 140744
+- restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+
+* Thu Jan 11 2007 Buchan Milne <bgmilne@mandriva.org> 2.3.1-1mdv2007.0
++ Revision: 107651
+- Import rancid
+
+* Tue Jan 09 2007 Buchan Milne <bgmilne@mandriva.org> 2.3.1-1mdv
+- initial package
+- cron jobs
+TODO:
+-lg config
+
