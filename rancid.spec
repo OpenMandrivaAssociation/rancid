@@ -8,7 +8,7 @@
 
 Name:		rancid
 Version:	2.3.3
-Release:	%mkrel 1
+Release:	2
 Summary:	Really Awesome New Cisco confIg Differ
 Group:		Monitoring
 License:	GPL
