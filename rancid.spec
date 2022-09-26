@@ -17,6 +17,7 @@ Patch0:		rancid-3.13-autoconf.patch
 Requires:	cvs expect >= 5.40
 BuildRequires:	expect >= 5.40
 BuildRequires:	systemd-rpm-macros
+BuildRequires:	iputils
 
 %description
 RANCID monitors a router's (or more generally a device's) configuration,
