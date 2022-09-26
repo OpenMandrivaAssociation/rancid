@@ -1,0 +1,14 @@
+diff -up rancid-3.13/configure.ac.omv~ rancid-3.13/configure.ac
+--- rancid-3.13/configure.ac.omv~	2022-09-26 21:05:34.755919655 +0200
++++ rancid-3.13/configure.ac	2022-09-26 21:05:34.754919648 +0200
+@@ -8,9 +8,7 @@ PACKAGE=`$srcdir/configure.vers package_
+ VERSION=`$srcdir/configure.vers package_version`
+ AC_SUBST(VERSION)
+ AC_SUBST(PACKAGE)
+-AC_INIT(m4_esyscmd(configure.vers package_name),
+-	m4_esyscmd(configure.vers package_version),
+-	[rancid@shrubbery.net])
++AC_INIT([rancid], [@VERSION@], [rancid@shrubbery.net])
+ AC_CONFIG_SRCDIR(CHANGES)
+ AM_INIT_AUTOMAKE
+ COPYYEARS="1997-2019"
