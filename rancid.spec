@@ -10,7 +10,7 @@ Release:	1
 Summary:	Really Awesome New Cisco confIg Differ
 Group:		Monitoring
 License:	GPL
-URL:		http://www.shrubbery.net/rancid/
+URL:		https://www.shrubbery.net/rancid/
 Source:		ftp://ftp.shrubbery.net/pub/rancid/rancid-%{version}.tar.gz
 Source1:	README.rancid.urpmi
 Patch0:		rancid-3.13-autoconf.patch
