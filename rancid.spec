@@ -15,6 +15,11 @@ Source:		ftp://ftp.shrubbery.net/pub/rancid/rancid-%{version}.tar.gz
 Source1:	README.rancid.urpmi
 Patch0:		rancid-3.13-autoconf.patch
 Requires:	cvs expect >= 5.40
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	expect >= 5.40
 BuildRequires:	systemd-rpm-macros
 BuildRequires:	iputils
