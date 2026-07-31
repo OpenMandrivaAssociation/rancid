@@ -5,7 +5,7 @@
 %define _sysconfdir /etc/%{name}
 
 Name:		rancid
-Version:	3.13
+Version:	3.14
 Release:	1
 Summary:	Really Awesome New Cisco confIg Differ
 Group:		Monitoring
@@ -13,7 +13,7 @@ License:	GPL
 URL:		https://www.shrubbery.net/rancid/
 Source:		ftp://ftp.shrubbery.net/pub/rancid/rancid-%{version}.tar.gz
 Source1:	README.rancid.urpmi
-Patch0:		rancid-3.13-autoconf.patch
+# dropped (no longer applies): Patch0:		rancid-3.14-autoconf.patch
 Requires:	cvs expect >= 5.40
 BuildRequires:	autoconf
 BuildRequires:	automake
